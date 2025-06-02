@@ -1,6 +1,6 @@
 # Brunch & Co
 
-Site vitrine d’un restaurant de brunch fictif, conçu avec **Next.js**, **Tailwind CSS** et un rendu **statique (SSG)**.
+Site vitrine d’un restaurant breton fictif, conçu avec **Next.js**, **Tailwind CSS** et un rendu **statique (SSG)**.
 
 ## Technologies
 
