@@ -1,7 +1,8 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#D9CAB3] text-[#3A3A3A]">
-      <h1 className="text-4xl font-bold">Bienvenue chez Brunch & Co</h1>
-    </main>
+    <>
+      <h1>Bienvenue à La Table Breizh</h1>
+      <p>Crêperie bretonne à Bordeaux.</p>
+    </>
   );
 }
