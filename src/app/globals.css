@@ -1,1 +1,54 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+.bg-terre {
+  background-color: #3B2F2F;
+}
+
+.text-terre {
+  color: #3B2F2F;
+}
+
+.bg-creme {
+  background-color: #FAF8F3;
+}
+
+.text-creme {
+  color: #FAF8F3;
+}
+
+.bg-olivier {
+  background-color: #7A9E7E;
+}
+
+.text-olivier {
+  color: #7A9E7E;
+}
+
+.bg-ocre {
+  background-color: #D9A441;
+}
+
+.text-ocre {
+  color: #D9A441;
+}
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-pacifico: 'Pacifico', cursive;
+}
+
+.font-heading {
+  font-family: var(--font-playfair);
+}
+
+.font-tagline {
+  font-family: var(--font-pacifico);
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
