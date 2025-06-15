@@ -1,4 +1,4 @@
-// src/components/home/SkillsPreview.jsxcomponents/common/Button.jsx
+// src/components/common/Button.jsx
 
 'use client';
 
@@ -43,7 +43,7 @@ export default function Button({ variant = "primary", ...props }) {
     className: `${baseStyles} ${variantStyles[variant]} ${props.className || ""}`
   };
 
-  if (props.to) {
+  if (props.href) {
     return <Link download={props.download} {...newProps} />;
   }
 
