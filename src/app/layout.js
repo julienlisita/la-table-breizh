@@ -26,8 +26,8 @@ const pacifico = Pacifico({
 })
 
 export const metadata = {
-  title: "La Table Breizh",
-  description: "Crêperie bretonne à Bordeaux",
+  title: "Le Brunch Bordelais",
+  description: "Restaurant de brunch à Bordeaux",
 };
 
 export default function RootLayout({ children }) {

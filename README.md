@@ -1,6 +1,6 @@
-# Brunch & Co
+# Le Brunch Bordelais
 
-Site vitrine d’un restaurant breton fictif, conçu avec **Next.js**, **Tailwind CSS** et un rendu **statique (SSG)**.
+Site vitrine du restaurant bordelais spécialisé dans les brunchs maison.
 
 ## Technologies
 
@@ -15,6 +15,4 @@ Créer un site moderne, élégant et performant sans backend, destiné à prése
 
 ## À venir
 
-- Ajout du menu en markdown
-- Formulaire de contact
-- Déploiement statique
+- reservation en ligne
