@@ -1,4 +1,4 @@
-// src/components/common/PageTitle.jsx
+// src/components/PageTitle.jsx
 
 export default function PageTitle({ className, children }) {
     return (

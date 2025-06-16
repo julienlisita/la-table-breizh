@@ -1,8 +1,83 @@
+// src/app/page.js
+
+'use client';
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import SpecialitiesSection from "@/components/SpecialitiesSection";
+import HeroSection from "@/components/HeroSection";
+import CommitmentsSection from "@/components/CommitmentsSection";
+import ConceptSection from "@/components/ConceptSection";
+import AmbianceSection from "@/components/AmbianceSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ContactSection from "@/components/ContactSection";
+
 export default function HomePage() {
+  
+  const contactTriggerRef = useRef(null);
+  const [showBrunchImage, setShowBrunchImage] = useState(false);
+
+  const handleIntersection = useCallback(([entry]) => {
+    setShowBrunchImage(prev => {
+      if (prev !== entry.isIntersecting) {
+        return entry.isIntersecting;
+      }
+      return prev;
+    });
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px 0px 200px 0px', 
+      threshold: 0,
+    });
+
+    const target = contactTriggerRef.current;
+    if (target) observer.observe(target);
+
+    return () => {
+      if (target) observer.unobserve(target);
+    };
+  }, []);
+
   return (
-    <>
-      <h1 className="font-heading">Le brunch Bordelais</h1>
-      <p className="font-tagline">Brunch maison<br/>Produits locaux<br/>Ambiance tranquille</p>
-    </>
+    <main className="relative">
+      {/* Image de fond dynamique */}
+      <div className="fixed inset-0 -z-20">
+        <img
+          src={ showBrunchImage ? "/images/brunch.jpg" : "/images/outdoor.jpg" }
+          alt="Fond de page"
+          className="w-full h-full object-cover"
+          loading={showBrunchImage ? "lazy" : "eager"}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      {/* Section Hero */}
+      <HeroSection />
+
+      {/* Section Concept */}
+      <ConceptSection />
+
+      {/* Section spécialités */}
+      <SpecialitiesSection />
+
+      {/* Section Engagement */}
+      <CommitmentsSection />
+
+      {/* Section Ambiance */}
+      <AmbianceSection />
+
+      {/* Section Témoignages */}
+      <TestimonialsSection />
+
+      {/* Bandeau de transition */}
+      <div ref={contactTriggerRef}  className="relative h-48 z-10 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none z-10" />
+      </div>
+
+      {/* Section Infos & Contact */}
+      <ContactSection />
+    </main>
   );
 }
