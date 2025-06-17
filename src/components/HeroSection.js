@@ -7,7 +7,7 @@ export default function HeroSection()
 {
     return (
         <section className="h-screen flex flex-col items-center justify-center text-white text-center px-4 space-y-12">
-          <PageTitle>Le brunch Bordelais</PageTitle>
+          <PageTitle color="creme">Le brunch Bordelais</PageTitle>
           <p className="text-creme text-xl sm:text-2xl lg:text-3xl font-tagline font-semibold leading-snug">
             Brunch maison<br />
             Produits locaux<br />
