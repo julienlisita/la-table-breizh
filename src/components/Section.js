@@ -11,7 +11,7 @@ const resolveColor = (color) => {
       return `var(--color-${color})`;
     };
 
-export default function Section({className, bgColor="creme", children}) {
+export default function Section({className, bgColor="transparent", children}) {
   return (
     <section 
       className={`${className} px-4 sm:px-6 lg:px-12 py-8 sm:py-10 lg:py-12`}
