@@ -9,7 +9,7 @@ export default function AmbianceSection()
 {
     return (
         <Section bgColor="#EFE8DC">
-            <SectionTitle  color="terre">L'ambiance</SectionTitle>
+            <SectionTitle  color="terre">L&apos;ambiance</SectionTitle>
             <p className="max-w-2xl mx-auto text-center mt-3 sm:mt-4 lg:mt-5">
             Un lieu chaleureux pour se retrouver entre amis, en famille, ou travailler au calme. Bois brut, lumière douce, musique jazzy : le brunch, c’est un moment à soi.
             </p>

@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     name: "Sarah G.",
-    comment: "Le lieu est chaleureux, les plats sont faits maison, j’ai adoré.",
+    comment: "Le lieu est chaleureux, les plats sont faits maison, j'ai adoré.",
     avatar: "/images/avatar3.jpg",
   },
   {
@@ -40,7 +40,7 @@ export default function TestimonialsSection()
               key={i}
               className="relative  text-lg text-center text-creme"
             >
-              <p className="italic">"{t.comment}"</p>
+              <p className="italic">{t.comment}</p>
               <footer className="text-sm text-ocre text-center font-semibold">
                 {t.name}
               </footer>
