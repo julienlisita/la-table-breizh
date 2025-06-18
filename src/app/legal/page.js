@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 export default function LegalMentionsPage() {
   return (
     <div className="bg-terre">
-      <PageTitle className="text-ocre">Mentions légales</PageTitle>
+      <PageTitle color="ocre">Mentions légales</PageTitle>
       <Section className="text-creme">
           <div className="mb-6">
             <h3 className="font-semibold">Éditeur du site</h3>
