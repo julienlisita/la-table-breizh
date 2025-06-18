@@ -39,7 +39,7 @@ export default function HomePage() {
     return () => {
       if (target) observer.unobserve(target);
     };
-  }, []);
+  }, [handleIntersection]);
 
   return (
     <main className="relative">
