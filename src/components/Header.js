@@ -13,7 +13,7 @@ export default function Header() {
     <header className="w-full h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-creme fixed top-0 z-50">
       {/* Logo à gauche */}
       <div>
-        <img src="/images/logo1.png" alt="Logo du restaurant" className="h-14 sm:h-16 lg:h-20 w-auto" />
+        <img src="/images/logo.avif" alt="Logo du restaurant" className="h-14 sm:h-16 lg:h-20 w-auto" />
       </div>
 
       {/* Menu desktop */}

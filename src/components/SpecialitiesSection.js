@@ -7,17 +7,17 @@ import SpecialityCard from "./SpecialityCard";
 
 const specialities = [
   {
-    imageSrc: "/images/eggs.jpg",
+    imageSrc: "/images/poached-egg.jpg",
     title: "Œufs brouillés bio",
     description: "Œufs de ferme, cuits à la perfection.",
   },
   {
-    imageSrc: "/images/granola.jpg",
+    imageSrc: "/images/granola-yogurt.jpg",
     title: "Bol de granola",
     description: "Granola maison, yaourt et fruits frais de saison.",
   },
   {
-    imageSrc: "/images/croissants.jpg",
+    imageSrc: "/images/pastries.jpg",
     title: "Viennoiseries artisanales",
     description: "Croissants, pains au chocolat et brioches locales.",
   },

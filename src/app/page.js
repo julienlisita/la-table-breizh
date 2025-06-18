@@ -45,7 +45,7 @@ export default function HomePage() {
       {/* Image de fond dynamique */}
       <div className="fixed inset-0 -z-20">
         <img
-          src={ showBrunchImage ? "/images/brunch.jpg" : "/images/outdoor.jpg" }
+          src={ showBrunchImage ? "/images/secondary-bg.avif" : "/images/hero-bg.avif" }
           alt="Fond de page"
           className="w-full h-full object-cover"
           loading={showBrunchImage ? "lazy" : "eager"}
