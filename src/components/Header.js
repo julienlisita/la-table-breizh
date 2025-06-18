@@ -5,6 +5,7 @@
 import Link from 'next/link';
 import { Menu, X } from "lucide-react"; 
 import useToggle from "../hooks/useToggle";
+import Image from 'next/image';
 
 export default function Header() {
   const { state: isOpen, toggleState } = useToggle(false);
@@ -12,8 +13,15 @@ export default function Header() {
   return (
     <header className="w-full h-14 sm:h-16 lg:h-20 flex items-center justify-between px-4 bg-creme fixed top-0 z-50">
       {/* Logo à gauche */}
-      <div>
-        <img src="/images/logo.avif" alt="Logo du restaurant" className="h-14 sm:h-16 lg:h-20 w-auto" />
+     
+      <div className="relative h-14 sm:h-16 lg:h-20 w-20">
+        <Image
+          src="/images/logo.avif"
+          alt="Logo du restaurant"
+          layout="fill"
+          objectFit="contain"
+          priority
+        />
       </div>
 
       {/* Menu desktop */}

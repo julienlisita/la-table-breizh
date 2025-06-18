@@ -10,6 +10,7 @@ import ConceptSection from "@/components/ConceptSection";
 import AmbianceSection from "@/components/AmbianceSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import Image from 'next/image';
 
 export default function HomePage() {
   
@@ -44,12 +45,13 @@ export default function HomePage() {
     <main className="relative">
       {/* Image de fond dynamique */}
       <div className="fixed inset-0 -z-20">
-        <img
-          src={ showBrunchImage ? "/images/secondary-bg.avif" : "/images/hero-bg.avif" }
+         <Image
+          src={showBrunchImage ? "/images/secondary-bg.avif" : "/images/hero-bg.avif"}
           alt="Fond de page"
-          className="w-full h-full object-cover"
-          loading={showBrunchImage ? "lazy" : "eager"}
-        />
+          layout="fill"
+          objectFit="cover"
+          priority={!showBrunchImage} 
+          />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
