@@ -44,7 +44,7 @@ export default function LegalMentionsPage() {
             <h3 className="font-semibold">Cookies & données personnelles</h3>
             <p>
               Ce site utilise des cookies uniquement à des fins statistiques anonymes.<br/>
-              Aucune donnée personnelle n'est collectée sans consentement.
+              Aucune donnée personnelle n&rsquo;est collectée sans consentement.
             </p>
           </div>
       </Section>

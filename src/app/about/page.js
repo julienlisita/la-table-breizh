@@ -10,7 +10,7 @@ export default function AboutPage() {
         <Section>
           <p className="mb-4">
             Situé au cœur de Bordeaux, <strong>Le Brunch Bordelais</strong> est un lieu de partage et de gourmandise, pensé pour les amoureux du brunch.
-            Notre cuisine maison s'inspire des produits locaux et de saison, dans un cadre cosy aux tons naturels.
+            Notre cuisine maison s&rsquo;inspire des produits locaux et de saison, dans un cadre cosy aux tons naturels.
           </p>
 
           <p className="mb-6 text-[#7A9E7E] font-medium">
